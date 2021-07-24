@@ -1,0 +1,47 @@
+#main {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 9999;
+  background-color: rgba(128, 128, 128, 0.459);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#main > input {
+  height: 80px;
+  width: auto;
+  background-color: rgba(128, 128, 128, 0.459);
+  outline: none;
+  border: none;
+  border-right: 1px rgba(0, 0, 0, 0.534) solid;
+}
+#main > input::placeholder {
+  color: rgb(26, 26, 26);
+}
+#main img {
+  filter: invert(0);
+  width: 100px;
+}
+#main div {
+  margin: 0px 0px 0px 10px;
+}
+#bg {
+  position: absolute;
+  top: 0%;
+  left: -1%;
+  width: 101vw;
+  height: 100vh;
+  z-index: 1;
+  background-color: black;
+  opacity: 0.5;
+}
+#flexCircle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 50px;
+  transform: translate(0%, -6%);
+}

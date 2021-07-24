@@ -1,0 +1,90 @@
+#background {
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 255, 0);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding-top: 5px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: row;
+  transform: translate(0%, 0%);
+  transition: 0.3s;
+  max-width: 50vw;
+  flex-wrap: wrap;
+}
+#mock {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  transition: 0s;
+  z-index: 10000;
+}
+#mockInactive {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  z-index: 10000;
+}
+#backgroundInactive {
+  width: auto;
+  height: auto;
+  background-color: rgba(0, 0, 255, 0);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding-top: 5px;
+  transform: translate(100%, 0%);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  z-index: 10000;
+  max-width: 50vw;
+  flex-wrap: wrap;
+}
+.button > img {
+  width: 40px;
+  height: 40px;
+  z-index: 5;
+  filter: invert(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  overflow: visible;
+}
+.button {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  border-radius: 50%;
+  margin: 2px;
+  background-color: black;
+  border: white 1px solid;
+  cursor: pointer;
+  overflow: hidden;
+}
+.button:hover {
+  filter: sepia(4%) brightness(119%) drop-shadow(0px 0px 3px #ffffff);
+  -webkit-filter: sepia(4%) brightness(119%) drop-shadow(0px 0px 3px #ffffff);
+  -moz-filter: sepia(4%) brightness(119%) drop-shadow(0px 0px 3px #ffffff);
+
+  transform: scale(1.07);
+}
+/* #picture {
+  filter: invert(0);
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.03);
+} */

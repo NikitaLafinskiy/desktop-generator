@@ -1,0 +1,25 @@
+#foreground {
+  background-color: rgb(122, 122, 122);
+  width: 70px;
+  height: 85px;
+  transform: scale(1);
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  position: absolute;
+}
+#foreground::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: rgb(22, 22, 22);
+  width: 70px;
+  height: 85px;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  transform: translate(0%, -5px);
+}
+#appIcon {
+  display: inline-block;
+}
+#foreground img {
+  filter: grayscale(1);
+}

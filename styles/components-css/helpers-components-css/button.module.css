@@ -1,0 +1,12 @@
+#button {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 100px;
+  border: 1px solid black;
+  width: 13vw;
+  height: 5vh;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+}

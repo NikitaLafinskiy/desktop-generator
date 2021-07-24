@@ -1,0 +1,8 @@
+#flex {
+  display: flex;
+  flex-direction: column;
+}
+#flex > a {
+  padding-left: 10px;
+  padding-top: 5px;
+}
