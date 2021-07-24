@@ -13,7 +13,12 @@ const Component = (props) => {
   const handleLaunch = () => {
     console.log('launched');
     axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/launch?path=${props.path}`
+      `${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/launch?path=${props.path}`,
+      {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+      }
     );
   };
   const handleShow = () => {
