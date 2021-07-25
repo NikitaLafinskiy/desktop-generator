@@ -12,14 +12,14 @@ const Component = (props) => {
   let iconRef = useRef(null);
   const handleLaunch = () => {
     console.log('launched');
-    axios.get(
-      `${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/launch?path=${props.path}`,
-      {
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-        },
-      }
-    );
+    // axios.get(
+    //   `${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/launch?path=${props.path}`,
+    //   {
+    //     headers: {
+    //       'Access-Control-Allow-Origin': '*',
+    //     },
+    //   }
+    // );
   };
   const handleShow = () => {
     gsap.to(imgRef, { opacity: 1, display: 'block', duration: 0.1 });
@@ -31,7 +31,7 @@ const Component = (props) => {
     });
     gsap.to(iconRef, {
       filter:
-        'invert(1) brightness(110%) contrast(200%) drop-shadow(0px 0px 3px white)',
+        'invert(1) brightness(110%) contrast(110%) drop-shadow(0px 0px 3px white)',
       duration: 0.03,
     });
   };
@@ -43,10 +43,11 @@ const Component = (props) => {
       duration: 0.03,
     });
     gsap.to(iconRef, {
-      filter: 'grayscale(1) brightness(110%) ',
+      filter: 'grayscale(1) brightness(100%) ',
       duration: 0.03,
     });
   };
+  console.log(props.path);
   return (
     <>
       <div
