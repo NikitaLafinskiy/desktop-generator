@@ -26,12 +26,12 @@ const Component = (props) => {
     gsap.to(appRef, {
       opacity: 1,
       filter:
-        'invert(1) brightness(110%) contrast(110%) drop-shadow(0px 0px 5px white)',
+        'invert(1) brightness(100%) contrast(100%) drop-shadow(0px 0px 5px white)',
       duration: 0.03,
     });
     gsap.to(iconRef, {
       filter:
-        'invert(1) brightness(110%) contrast(110%) drop-shadow(0px 0px 3px white)',
+        'invert(1) brightness(100%) contrast(100%) drop-shadow(0px 0px 3px white)',
       duration: 0.03,
     });
   };
@@ -39,7 +39,7 @@ const Component = (props) => {
     gsap.to(imgRef, { opacity: 0, display: 'none', duration: 0.1 });
     gsap.to(appRef, {
       opacity: 0.8,
-      filter: 'invert(0) brightness(110%) ',
+      filter: 'invert(0) brightness(100%) ',
       duration: 0.03,
     });
     gsap.to(iconRef, {
