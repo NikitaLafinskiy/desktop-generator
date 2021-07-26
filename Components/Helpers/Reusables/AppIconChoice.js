@@ -1,8 +1,9 @@
-import axios from 'axios';
 import React, { useState, useRef } from 'react';
 import styles from '../../../styles/components-css/helpers-components-css/appIcon.module.css';
+import { useRouter } from 'next/router';
 
 const Component = (props) => {
+  const router = useRouter();
   const [position, setPosition] = useState({
     x: props.x,
     y: props.y,
@@ -11,15 +12,8 @@ const Component = (props) => {
   let appRef = useRef(null);
   let iconRef = useRef(null);
   const handleLaunch = () => {
-    console.log('launched');
-    // axios.get(
-    //   `${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/launch?path=${props.path}`,
-    //   {
-    //     headers: {
-    //       'Access-Control-Allow-Origin': '*',
-    //     },
-    //   }
-    // );
+    console.log('redirect');
+    router.push('/edit/app/' + props.id);
   };
   const handleShow = () => {
     gsap.to(imgRef, { opacity: 1, display: 'block', duration: 0.1 });
@@ -61,9 +55,9 @@ const Component = (props) => {
           width: '70px',
           filter: 'invert(0) brightness(110%)  drop-shadow(0px 0px 0px black)',
         }}
-        onDoubleClick={handleLaunch}
         onMouseOver={handleShow}
         onMouseOut={handleHide}
+        onClick={handleLaunch}
         id={styles.appIcon}>
         <div
           style={{

@@ -5,7 +5,6 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import TopMenu from '../../../Components/Helpers/Reusables/TopMenu';
 import ImageEditable from '../../../Components/Helpers/Reusables/PictureEditable';
-import { PictureUploadProvider } from '../../../Contexts/PictureUploadContext';
 import SB from '../../../Components/Main/Background/Background';
 
 export default function Choice() {

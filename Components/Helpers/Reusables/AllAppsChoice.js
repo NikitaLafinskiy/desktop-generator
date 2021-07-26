@@ -1,5 +1,5 @@
 import useAllApps from '../../../hooks/useAllApps';
-import AppIcon from './AppIcon';
+import AppIcon from './AppIconChoice';
 
 export default function AllApps() {
   const { apps } = useAllApps();

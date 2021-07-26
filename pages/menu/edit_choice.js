@@ -22,6 +22,9 @@ export default function Choice() {
         <Link href='/edit/app/all'>
           <a>Edit the app positions</a>
         </Link>
+        <Link href='/edit/app/choice'>
+          <a>Edit individual app's background</a>
+        </Link>
       </div>
     </MenuBar>
   );
